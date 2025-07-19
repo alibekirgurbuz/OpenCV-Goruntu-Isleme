@@ -1,0 +1,1 @@
+Dijital görüntü iki boyutlu bir matristir. Matrisin her bir hücresi bir piksel olarak adlandırılır ve bir renk değerini temsil eder. Yani, dijital bir görüntü; satır ve sütun şeklinde düzenlenmiş, çok sayıda küçük karelerden oluşur. Bir dijital görüntü, matris (2B dizi) şeklinde bilgisayarda saklanır
