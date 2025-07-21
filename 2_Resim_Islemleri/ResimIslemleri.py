@@ -1,5 +1,5 @@
 import cv2
-img = cv2.imread("../Djital_Goruntu_Nedir/pp.jpg")
+img = cv2.imread("../1_Djital_Goruntu_Nedir/pp.jpg")
 
 """
 cv2.resize(), verilen bir görüntüyü yeni bir boyuta

@@ -10,7 +10,7 @@ Contours işlemleri şu amaçlarla kullanılır:
 import cv2
 
 # Görüntüyü oku
-img = cv2.imread('../Djital_Goruntu_Nedir/pp.jpg')
+img = cv2.imread('../1_Djital_Goruntu_Nedir/pp.jpg')
 
 # Griye çevir
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

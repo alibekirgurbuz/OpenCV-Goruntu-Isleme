@@ -8,7 +8,7 @@ ve günümüzde en popüler kenar tespit yöntemlerinden biridir.
 import cv2
 
 # 1. Görüntüyü oku
-img = cv2.imread('../Djital_Goruntu_Nedir/pp.jpg')
+img = cv2.imread('../1_Djital_Goruntu_Nedir/pp.jpg')
 
 # 2. Griye dönüştür
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
