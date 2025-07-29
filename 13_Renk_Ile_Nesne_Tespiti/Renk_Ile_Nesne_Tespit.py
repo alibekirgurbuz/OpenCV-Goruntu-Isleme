@@ -2,7 +2,7 @@ import cv2 # OpenCV kütüphanesi, görüntü işleme için kullanılır.
 import numpy as np # Dizi işlemleri için.
 from collections import deque # Nesnenin izini takip etmek için sabit uzunlukta bir liste (kuyruk yapısı).
 
-buffer_size = 16  # Ekranda son 16 konumu hatırlamak için kullanılır.
+buffer_size = 15  # Ekranda son 16 konumu hatırlamak için kullanılır.
 pts = deque(maxlen=buffer_size) # Bu noktalar deque içine eklenerek iz oluşturur.
 
 
