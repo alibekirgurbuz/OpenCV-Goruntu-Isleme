@@ -2,8 +2,8 @@ import face_recognition
 import cv2
 
 # Bilinen yüz görüntülerini yükle (veritabanı)
-image_sean = face_recognition.load_image_file("../15_Histogram_of_Oriented_Gradients/sean.jpg")
-image_clint = face_recognition.load_image_file("../15_Histogram_of_Oriented_Gradients/clint.jpg")
+image_sean = face_recognition.load_image_file("../Assets/sean.jpg")
+image_clint = face_recognition.load_image_file("../Assets/clint.jpg")
 
 # Encode işlemi
 encoding_sean = face_recognition.face_encodings(image_sean)[0]
@@ -14,7 +14,7 @@ known_face_encodings = [encoding_sean, encoding_clint]
 known_face_names = ["sean", "clint"]
 
 # Tanınacak test görüntüsü
-test_image = face_recognition.load_image_file("../15_Histogram_of_Oriented_Gradients/clint2.jpg")
+test_image = face_recognition.load_image_file("../Assets/clint2.jpg")
 test_image_rgb = cv2.cvtColor(test_image, cv2.COLOR_BGR2RGB)
 
 # Yüz tespiti ve encoding

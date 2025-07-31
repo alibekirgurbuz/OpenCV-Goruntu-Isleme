@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Görüntüyü yükle
-img = cv2.imread('../1_Djital_Goruntu_Nedir/pp.jpg')
+img = cv2.imread('../Assets/vazo.jpg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # float32 tipine dönüştür
@@ -14,7 +14,7 @@ blockSize: Köşe tespiti için kullanılan komşuluk alanının boyutu.
 ksize: Sobel türevleri için çekirdek boyutu.
 k: Harris algılayıcısı için serbest parametre (genellikle 0.04–0.06 arası).
 """
-dst = cv2.cornerHarris(gray, blockSize=4, ksize=3, k=0.05)
+dst = cv2.cornerHarris(gray, blockSize=7, ksize=3, k=0.05)
 
 # Sonuçları genişlet (güçlü köşeler için eşik uygula)
 img[dst > 0.01 * dst.max()] = [0, 0, 255]

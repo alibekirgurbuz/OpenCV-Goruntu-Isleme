@@ -14,7 +14,7 @@ flags (isteğe bağlı): Görüntünün nasıl okunacağını belirleyen paramet
 (cv2.IMREAD_UNCHANGED) veya -1  Dosyadaki tüm kanalları olduğu gibi okur (ör: RGBA).
 """
 # Görüntüyü oku (grayscale olarak)
-img = cv2.imread('pp.jpg',0)
+img = cv2.imread('../Assets/pp.jpg', 0)
 
 """
 .shape özelliği, (.shape bir fonksiyon değildir, bir özelliktir. Parantez kullanılmaz: img.shape)

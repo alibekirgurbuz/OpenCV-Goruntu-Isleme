@@ -1,14 +1,7 @@
-"""
-Bir cismin (nesnenin) merkezini bulmak için
-konturlar üzerinden moment (momentum) hesaplaması yapılır.
-Momentler, bir şeklin geometrik özelliklerini sayısal olarak ifade eden değerlerdir
-ve bu sayede kütle merkezi (centroid) elde edilebilir.
--OpenCV’de momentler cv2.moments() fonksiyonu ile hesaplanır.
-"""
 import cv2
 
 # Görüntüyü yükle
-image = cv2.imread('vazo.jpg')
+image = cv2.imread('../Assets/vazo.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 _, thresh = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
 
