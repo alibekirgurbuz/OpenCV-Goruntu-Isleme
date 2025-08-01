@@ -3,7 +3,7 @@ import numpy as np # Dizi işlemleri için.
 from collections import deque # Nesnenin izini takip etmek için sabit uzunlukta bir liste (kuyruk yapısı).
 
 buffer_size = 15  # Ekranda son 16 konumu hatırlamak için kullanılır.
-pts = deque(maxlen=buffer_size) # Bu noktalar deque içine eklenerek iz oluşturur.
+pts = deque(maxlen=buffer_size) # Bu noktalar1 deque içine eklenerek iz oluşturur.
 
 
 # Belirli bir mavi renk aralığı (HSV formatında).
@@ -72,8 +72,8 @@ while True:
             else:
                 center = None
         # İz bırakma (Trajectory)
-        # pts dizisine merkez noktalar eklenir.
-        # Bu noktalar arası çizgi çizilerek nesnenin hareketi izlenir.
+        # pts dizisine merkez noktalar1 eklenir.
+        # Bu noktalar1 arası çizgi çizilerek nesnenin hareketi izlenir.
         for i in range(1,len(pts)):
             if pts[i-1] is None or pts[i] is None:continue
             cv2.line(imgorginal,pts[i-1],pts[i],(0,255,255),3)
