@@ -11,7 +11,6 @@ def check(frame1):
         crop = frame1[y1:y1 + 15, x1:x1 + 26]
         count = cv2.countNonZero(crop)
         #print(f"Boş alan sayısı: {count}")
-
         if count<150:
             color = (0,255,0)
             spacecounter += 1
